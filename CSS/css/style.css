@@ -1,0 +1,80 @@
+/* селектор по тегу */
+div {
+    color: green;
+}
+
+/*селектор по классу */
+.block {
+    color: pink;
+}
+
+/* селектор по id */
+#id-block {
+    color: blueviolet;
+}
+
+/* селектор по атрибуту */
+[data-example] {
+    color: aqua;
+}
+
+[data-example="value2"] {
+    color: rgb(241, 15, 166);
+}
+
+/*комбинируем три класса (3,4,5)*/
+.block3,.block4,.block5 {
+    color: #b33636;
+}
+
+/* Контексты */
+
+div.blue-block {
+ color: blue;
+}
+
+/* внутри дива */
+div .orange { 
+    color: orange;
+}
+
+/* прямые потомки */
+.parent>.child {
+color: cornflowerblue;
+}
+
+/* Приоритет 10*/
+.blo {
+    width: 500px;
+    height: 500px;
+    background-color: black ;
+}
+/* Приоритет 10*/
+.blo-2 {
+    background-color: red ;
+}
+/* если нужно перебить приоритет, то можно комбинировать */
+/* Приоритет 1 + 10=11*/
+div.blue-block {
+    color: blue;
+   }
+/* Приоритет 100 */
+#blo {
+    background-color: green;
+}
+
+/* Приоритет 1 */
+div {
+    background-color: pink;
+}
+
+/* eсли добавить !important, то => Приоритет 10 000 */
+/* div {
+    background-color: rgb(50, 201, 116) !important;
+} */
+/* Приоритет 1000  style="background-color: aqua;" html*/
+
+/* лучше использовать селекторы с приоритетом 10 */
+
+
+   
