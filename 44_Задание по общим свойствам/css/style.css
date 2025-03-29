@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+.main {
+    max-width: 1190px;
+    max-height: 525px;
+    background-color: #e9e8f3;
+    overflow: auto;
+}
+.block {
+    width: 232px;
+    background-color: #bea886;
+    text-align: left;
+    padding: 23px 20px;
+    border-radius: 25px;
+    box-shadow: inset 1px 1px 8px 2px grey;
+    display: inline-block;
+    margin: 10px 5px; 
+}
+
